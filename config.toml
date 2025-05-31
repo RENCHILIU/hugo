@@ -1,28 +1,40 @@
 baseURL = "https://renchiliu.com/"
-languageCode = "en-us"
-title = "Renchi's Blog"
+title = "Renchi Liu"
 theme = "PaperMod"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+
+paginate = 10
 
 [params]
+  description = "Renchi's site about ideas and projects"
+  author = "Renchi Liu"
+
+  defaultTheme = "auto"  # dark, light, auto
   ShowReadingTime = true
   ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowToc = true
 
-[params.homeInfoParams]
-  Title = "Welcome to My Blog 👋"
-  Content = "I'm Renchi, a developer sharing thoughts, code, and ideas."
+  # Regular Mode 
+  homeInfoParams = {
+    Title = "Hi, I'm Renchi 👋",
+    Content = "iOS  • System Design •  AI"
+  }
 
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 1
+  socialIcons = [
+    { name = "github", url = "https://github.com/RENCHILIU" },
+    { name = "linkedin", url = "https://linkedin.com/in/renchiliu" }
+  ]
 
-[[menu.main]]
-  name = "Posts"
-  url = "/posts/"
-  weight = 2
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
 
-[[menu.main]]
-  name = "About"
-  url = "/about/"
-  weight = 3
-
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
