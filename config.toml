@@ -10,31 +10,34 @@ paginate = 10
   description = "Renchi's site about ideas and projects"
   author = "Renchi Liu"
 
-  defaultTheme = "auto"  # dark, light, auto
+  defaultTheme = "auto"
   ShowReadingTime = true
   ShowCodeCopyButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowToc = true
 
-  # Regular Mode 
-  homeInfoParams = {
-    Title = "Hi, I'm Renchi 👋",
-    Content = "iOS  • System Design •  AI"
-  }
+[params.homeInfoParams]
+  Title = "Hi, I'm Renchi 👋"
+  Content = "iOS  • System Design •  AI"
 
-  socialIcons = [
-    { name = "github", url = "https://github.com/RENCHILIU" },
-    { name = "linkedin", url = "https://linkedin.com/in/renchiliu" }
-  ]
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/RENCHILIU"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/renchiliu"
 
 [menu]
-  [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
-    weight = 1
 
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 2
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 1
+
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 2
+
