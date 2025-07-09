@@ -3,14 +3,21 @@ export const onRequest = async () => {
     `{
       "applinks": {
         "apps": [],
-        "details": [{
-          "appIDs": ["YHD2L5CFUH.com.renchi.citibank"],
-          "paths": ["/apply*", "/apply/*"]
-        }]
+        "details": [
+          {
+            "appIDs": [
+              "GW4VQUFY73.com.renchi.citiapp"
+            ],
+            "paths": [
+              "/apply*",
+              "/apply/*"
+            ]
+          }
+        ]
       },
       "appclips": {
         "apps": [
-          "YHD2L5CFUH.com.renchi.citibank.ent-Clip"
+          "GW4VQUFY73.com.renchi.citiapp.appclip"
         ]
       }
     }`,
