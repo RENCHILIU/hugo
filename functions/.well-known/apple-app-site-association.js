@@ -9,7 +9,7 @@ export const onRequest = async () => {
               "GW4VQUFY73.com.renchi.citiapp"
             ],
             "paths": [
-              "/apply*",
+              "/apply",
               "/apply/*"
             ]
           }
