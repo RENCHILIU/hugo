@@ -1,6 +1,19 @@
-export const onRequest = async ({ next }) => {
+export const onRequest = async () => {
   return new Response(
-    await fetch("https://renchiliu.com/.well-known/apple-app-site-association").then(r => r.text()),
+    `{
+      "applinks": {
+        "apps": [],
+        "details": [{
+          "appIDs": ["YHD2L5CFUH.com.renchi.citibank"],
+          "paths": ["/apply*", "/apply/*"]
+        }]
+      },
+      "appclips": {
+        "apps": [
+          "YHD2L5CFUH.com.renchi.citibank.ent-Clip"
+        ]
+      }
+    }`,
     {
       headers: {
         "Content-Type": "application/json",
