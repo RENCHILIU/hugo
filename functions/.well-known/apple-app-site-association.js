@@ -6,7 +6,8 @@ export const onRequest = async () => {
         "details": [
           {
             "appIDs": [
-              "GW4VQUFY73.com.renchi.citiapp"
+              "GW4VQUFY73.com.renchi.citiapp",
+	      "GW4VQUFY73.com.renchi.citiapp.appclip"
             ],
             "paths": [
               "/apply",
