@@ -1,27 +1,27 @@
 export const onRequest = async () => {
   return new Response(
-    `{
-      "applinks": {
-        "apps": [],
-        "details": [
+    JSON.stringify({
+      applinks: {
+        apps: [],
+        details: [
           {
-            "appIDs": [
+            appIDs: [
               "GW4VQUFY73.com.renchi.citiapp",
-	      "GW4VQUFY73.com.renchi.citiapp.appclip"
+              "GW4VQUFY73.com.renchi.citiapp.appclip"
             ],
-            "paths": [
-              "/apply",
-              "/apply/*"
+            components: [
+              { "/": "/apply" },
+              { "/": "/apply/*" }
             ]
           }
         ]
       },
-      "appclips": {
-        "apps": [
+      appclips: {
+        apps: [
           "GW4VQUFY73.com.renchi.citiapp.appclip"
         ]
       }
-    }`,
+    }),
     {
       headers: {
         "Content-Type": "application/json",
